@@ -56,33 +56,33 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerFilter.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanTwistRotate.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanScreenDepth.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Examples\Scripts\LeanPulseScale.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanSelectableByFinger.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerDown.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerUp.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanSelectableByFingerBehaviour.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Required\Scripts\LeanGesture.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanPinchScale.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanDragTranslate.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerFilter.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanDragCamera.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanTwistRotateAxis.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Required\Scripts\LeanSnapshot.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerOld.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanSwipeBase.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanDragTranslate.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanScreenQuery.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Examples\Scripts\LeanTouchEvents.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanDragCamera.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerUpdate.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanSelectByFinger.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Required\Scripts\LeanTouch.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerDown.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Examples\Scripts\LeanPulseScale.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerTap.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerUp.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanTouchSimulator.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerData.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Required\Scripts\LeanSnapshot.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerTap.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerSwipe.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanFingerUpdate.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Examples\Scripts\LeanTouchEvents.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Required\Scripts\LeanFinger.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanSelectByFinger.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanScreenQuery.cs" />
     <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanDragTrail.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanTwistRotate.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Required\Scripts\LeanTouch.cs" />
-    <Compile Include="Assets\Plugins\CW\LeanTouch\Extras\Scripts\LeanTwistRotateAxis.cs" />
+    <Compile Include="Assets\Plugins\CW\LeanTouch\Required\Scripts\LeanFinger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\CW\LeanTouch\LeanTouch.asmdef" />
@@ -337,8 +337,26 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Program Files\Unity\Hub\Editor\2021.2.11f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Bolt.State.Editor">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Bolt.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="YamlDotNet">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\YamlDotNet.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.Core.Editor">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Bolt.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.Graphs.Editor">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Ludiq.Graphs.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.Core.Runtime">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Bolt.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
@@ -349,17 +367,44 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="Ludiq.Graphs.Runtime">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Ludiq.Graphs.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.Platforms">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Ludiq.Platforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Ionic.Zip.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.Flow.Editor">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Bolt.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
+    <Reference Include="Ludiq.Core.Editor">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Ludiq.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.Flow.Runtime">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Bolt.Flow.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MiscUtil">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\MiscUtil.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Ludiq.Core.Runtime">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Ludiq.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.State.Runtime">
+      <HintPath>Assets\Bolt\Ludiq\Assemblies\Bolt.State.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
