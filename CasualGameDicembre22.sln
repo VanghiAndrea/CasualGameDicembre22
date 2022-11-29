@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanCommon", "LeanCommon.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obi.Editor", "Obi.Editor.csproj", "{05971CF1-E922-1290-E2D4-DB098E280DBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{D9D03C5D-264E-8888-97B8-B191BDACC7EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{05971CF1-E922-1290-E2D4-DB098E280DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05971CF1-E922-1290-E2D4-DB098E280DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05971CF1-E922-1290-E2D4-DB098E280DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D03C5D-264E-8888-97B8-B191BDACC7EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D03C5D-264E-8888-97B8-B191BDACC7EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D03C5D-264E-8888-97B8-B191BDACC7EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9D03C5D-264E-8888-97B8-B191BDACC7EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
